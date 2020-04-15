@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const greeting = await fetch(`/api/greeting?name=isabella`).then((res) =>
+      const greeting = await fetch('/api/greeting?name=isabella').then((res) =>
         res.json()
       );
       setGreeting(greeting);
