@@ -7,9 +7,9 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
-      const greeting = await fetch('/api/greeting?name=isabella').then((res) =>
-        res.json()
-      );
+      const greeting = await fetch(
+        'http://178.128.244.229:3001/api/greeting?name=isabella'
+      ).then((res) => res.json());
       setGreeting(greeting);
     }
     fetchData();
